@@ -9,4 +9,5 @@
  */
 
 rootProject.name = 'grokking-algorithms'
-include('app')
+include('cpp')
+include('java')
