@@ -19,3 +19,11 @@ plugins {
 application {
     targetMachines.add(machines.linux.x86_64)
 }
+
+unitTest {
+    binaries.configureEach {
+        if (toolChain instanceof Gcc && targetMachine.operatingSystemFamily.linux) {
+            linkTask.get().linkerArgs.add('-lcunit')
+        }
+    }
+}
