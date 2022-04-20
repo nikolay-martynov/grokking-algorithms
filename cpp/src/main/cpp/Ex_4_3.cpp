@@ -10,5 +10,5 @@ int Ex_4_3::max(const std::list<int>& elements) {
   if (tail.empty()) {
     return head;
   }
-  return std::max(head, this->max(tail));
+  return std::max(head, max(tail));
 }

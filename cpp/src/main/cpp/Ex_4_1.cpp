@@ -3,6 +3,5 @@
 int Ex_4_1::sum(const std::vector<int>& numbers) {
   return numbers.empty()
              ? 0
-             : numbers.at(0) +
-                   this->sum({std::next(numbers.begin()), numbers.end()});
+             : numbers.at(0) + sum({std::next(numbers.begin()), numbers.end()});
 }

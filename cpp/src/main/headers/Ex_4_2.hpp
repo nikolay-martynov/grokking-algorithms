@@ -20,8 +20,8 @@ class Ex_4_2 {
   int count(const std::list<Elements> &elements) {
     return elements.empty()
                ? 0
-               : 1 + this->count(std::list<Elements>(
-                         std::next(elements.begin()), elements.end()));
+               : 1 + count(std::list<Elements>(std::next(elements.begin()),
+                                               elements.end()));
   }
 };
 
