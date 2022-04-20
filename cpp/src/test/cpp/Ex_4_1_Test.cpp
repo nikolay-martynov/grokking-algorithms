@@ -1,9 +1,5 @@
 #include "Ex_4_1_Test.hpp"
 
-#include <CUnit/CUnit.h>
-
-#include <cassert>
-
 #include "Ex_4_1.hpp"
 
 namespace {
@@ -46,13 +42,9 @@ then:
 
 }  // namespace
 
-void Ex_4_1_Test::registerCUnit() {
-  assert(CU_registry_initialized());
-  if (CU_pSuite suite = CU_add_suite("Ex_4_1", nullptr, nullptr);
-      suite != NULL) {
-    CU_ADD_TEST(suite, when_empty_then_zero);
-    CU_ADD_TEST(suite, one_element_is_self);
-    CU_ADD_TEST(suite, two_elements);
-    CU_ADD_TEST(suite, many_elements);
-  }
+void Ex_4_1_Test::registerTestCases(CU_pSuite suite) {
+  CU_ADD_TEST(suite, when_empty_then_zero);
+  CU_ADD_TEST(suite, one_element_is_self);
+  CU_ADD_TEST(suite, two_elements);
+  CU_ADD_TEST(suite, many_elements);
 }

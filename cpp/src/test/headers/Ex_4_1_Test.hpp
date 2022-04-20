@@ -1,9 +1,14 @@
 #ifndef EX_4_1_TEST_HPP
 #define EX_4_1_TEST_HPP
 
-class Ex_4_1_Test {
+#include "TestSuite.hpp"
+
+class Ex_4_1_Test : public TestSuite {
  public:
-  void registerCUnit();
+  Ex_4_1_Test() : TestSuite("Ex_4_1"){};
+
+ protected:
+  virtual void registerTestCases(CU_pSuite suite);
 };
 
 #endif
