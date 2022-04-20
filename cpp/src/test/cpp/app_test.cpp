@@ -7,12 +7,13 @@
 #include "Ex_4_1_Test.hpp"
 #include "Ex_4_2_Test.hpp"
 #include "Ex_4_3_Test.hpp"
+#include "Ex_4_4_Test.hpp"
 
 int main(int argc, char* argv[]) {
   CU_initialize_registry();
   std::vector<std::shared_ptr<TestSuite> > suites(
       {std::make_shared<Ex_4_1_Test>(), std::make_shared<Ex_4_2_Test>(),
-       std::make_shared<Ex_4_3_Test>()});
+       std::make_shared<Ex_4_3_Test>(), std::make_shared<Ex_4_4_Test>()});
   for (auto const& suite : suites) {
     suite->registerCUnit();
   }
