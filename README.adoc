@@ -1,0 +1,14 @@
+= Grokking Algorithms
+
+Solutions for exercises from link:https://www.manning.com/books/grokking-algorithms[Grokking Algorithms. An illustrated guide for programmers and other curious people] by Aditya Y. Bhargava.
+
+|===
+|Java|C++
+
+a|link:java/src/main/java/com/github/nikolay_martynov/grokking_algorithms/[Solutions]
+a|link:cpp/src/main/[Solutions]
+
+a|link:java/src/test/groovy/com/github/nikolay_martynov/grokking_algorithms/[Tests]
+a|link:cpp/src/test/[Tests]
+
+|===
