@@ -23,6 +23,7 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
+    testImplementation platform('org.apache.groovy:groovy-bom:4.0.1')
 }
 
 testing {
@@ -30,7 +31,7 @@ testing {
         // Configure the built-in test suite
         test {
             // Use Spock test framework
-            useSpock('2.0-groovy-3.0')
+            useSpock('2.2-M1-groovy-4.0')
         }
     }
 }
