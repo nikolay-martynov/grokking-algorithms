@@ -3,6 +3,17 @@ package com.github.nikolay_martynov.grokking_algorithms
 import spock.lang.Specification
 
 class Ex_9_3SubstringTest extends Specification {
+
+    def "9.3"() {
+        given:
+        String a = 'blue'
+        String b = 'clues'
+        when:
+        List<Ex_9_3_substring.CommonSubstring> substrings = new Ex_9_3_substring().findCommonSubstrings(a, b)
+        then:
+        substrings ==~ [new Ex_9_3_substring.CommonSubstring(1, 1, 3)]
+    }
+
     def "empty a"() {
         given:
         String a = ''
