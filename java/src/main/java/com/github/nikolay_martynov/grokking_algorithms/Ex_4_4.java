@@ -14,7 +14,7 @@ public class Ex_4_4 {
      * @param targetValue Value to search for.
      * @return true if sortedList contains targetValue. false if sortedList is empty or does not contain targetValue.
      */
-    boolean contains(@Nonnull List<Integer> sortedList, int targetValue) {
+    public boolean contains(@Nonnull List<Integer> sortedList, int targetValue) {
         if (sortedList.isEmpty()) {
             return false;
         }

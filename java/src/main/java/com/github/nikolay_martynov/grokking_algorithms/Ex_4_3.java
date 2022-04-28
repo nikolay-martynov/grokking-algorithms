@@ -16,7 +16,7 @@ public class Ex_4_3 {
      * @return Value of the maximum element in the list or null if the list is empty.
      */
     @Nullable
-    Integer max(@Nonnull List<Integer> elements) {
+    public Integer max(@Nonnull List<Integer> elements) {
         if (elements.isEmpty()) {
             return null;
         }

@@ -21,7 +21,7 @@ public class Ex_6 {
      * @return First node for which predicate has returned true or null if no linked node has matched.
      */
     @Nullable
-    <T> T greedySearch(@Nonnull Map<T, List<T>> graph, @Nonnull T start, @Nonnull Predicate<T> predicate) {
+    public <T> T greedySearch(@Nonnull Map<T, List<T>> graph, @Nonnull T start, @Nonnull Predicate<T> predicate) {
         Queue<T> toVisit = new LinkedList<>();
         toVisit.add(start);
         Set<T> visited = new HashSet<>(graph.size());

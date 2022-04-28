@@ -19,7 +19,7 @@ public class Ex_9_3_subsequence {
      * Example: a=ABCEF, b=ACDFG, common sequence is A then C then F, result=[[0,2,4],[0,1,3]]
      */
     @Nonnull
-    int[][] findCommonSubsequence(@Nonnull String a, @Nonnull String b) {
+    public int[][] findCommonSubsequence(@Nonnull String a, @Nonnull String b) {
         // We do not really need this table if we just remember when we detect
         // that matching subsequence has become longer, but the exercise is about dynamic programming.
         int[][] sequenceLength = new int[a.length()][];

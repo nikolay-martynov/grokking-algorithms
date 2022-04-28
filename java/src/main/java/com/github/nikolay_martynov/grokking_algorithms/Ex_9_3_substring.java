@@ -17,7 +17,7 @@ public class Ex_9_3_substring {
      * Ignores shorter substrings that are fully within other longer substrings.
      */
     @Nonnull
-    List<CommonSubstring> findCommonSubstrings(@Nonnull String a, @Nonnull String b) {
+    public List<CommonSubstring> findCommonSubstrings(@Nonnull String a, @Nonnull String b) {
         List<CommonSubstring> result = new LinkedList<>();
         int[][] substringsLength = new int[a.length()][];
         for (int aIndex = 0; aIndex < a.length(); aIndex++) {

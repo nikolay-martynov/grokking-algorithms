@@ -26,7 +26,7 @@ public class Ex_7 {
      * If there is no route from start to finish, then null is returned.
      */
     @Nullable
-    <T> List<T> findClosestRoute(Map<T, List<Edge<T>>> graph, T start, T finish) {
+    public <T> List<T> findClosestRoute(Map<T, List<Edge<T>>> graph, T start, T finish) {
         if (start.equals(finish)) {
             return Collections.singletonList(start);
         }
@@ -87,7 +87,7 @@ public class Ex_7 {
      * @param distance Distance between vertices.
      * @param target   Edge target.
      */
-    record Edge<T>(double distance, @Nonnull T target) {
+    public record Edge<T>(double distance, @Nonnull T target) {
     }
 
     /**

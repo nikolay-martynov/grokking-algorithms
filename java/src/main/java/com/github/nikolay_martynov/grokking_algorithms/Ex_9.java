@@ -16,7 +16,7 @@ public class Ex_9 {
      * @return A set of items with maximum cost that can be added to the bag without exceeding its size.
      */
     @Nonnull
-    <T> Set<T> optimizeBagDynamic(@Nonnull Map<T, ItemInfo> inventory, int bagSize) {
+    public <T> Set<T> optimizeBagDynamic(@Nonnull Map<T, ItemInfo> inventory, int bagSize) {
         int minItemSize = Integer.MAX_VALUE;
         for (ItemInfo itemInfo : inventory.values()) {
             minItemSize = Integer.min(minItemSize, itemInfo.size());

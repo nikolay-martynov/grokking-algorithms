@@ -15,7 +15,7 @@ public class Ex_4_qsort {
      * @param comparator Comparator to be used to compare elements in the list.
      * @param <T>        Type of the elements in the list.
      */
-    <T> void quickSort(@Nonnull List<T> source, @Nonnull Comparator<T> comparator) {
+    public <T> void quickSort(@Nonnull List<T> source, @Nonnull Comparator<T> comparator) {
         if (source.size() < 2) {
             return;
         }

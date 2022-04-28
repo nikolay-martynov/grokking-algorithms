@@ -13,7 +13,7 @@ public class Ex_4_2 {
      * @param elements List whose elements are to be counted.
      * @return Number of elements in the list or 0 if the list is empty.
      */
-    int count(@Nonnull List<?> elements) {
+    public int count(@Nonnull List<?> elements) {
         return elements.isEmpty() ? 0 : 1 + count(elements.subList(1, elements.size()));
     }
 
